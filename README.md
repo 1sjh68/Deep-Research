@@ -1,4 +1,3 @@
-# Deep-Research
 # 智能 AI 内容创作框架 (Autonomous AI Content Generation Framework)
 
 [![Python Version](https://img.shields.io/badge/Python-3.9%2B-blue.svg)](https://www.python.org/)

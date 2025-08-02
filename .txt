@@ -1,0 +1,29 @@
+# --- 核心 AI 与模型 ---
+openai>=1.12.0      # 用于与 DeepSeek 和其他 OpenAI 兼容的 API 交互
+tiktoken            # 用于精确计算 token 数量
+
+# --- 向量数据库与 RAG ---
+chromadb>=0.4.22    # 向量数据库，用于存储和检索经验
+thefuzz             # 用于模糊字符串匹配（例如在应用补丁时）
+python-Levenshtein  # 可选，但能极大提升 thefuzz 的性能
+
+# --- Web 研究与数据抓取 ---
+google-api-python-client # 用于调用 Google Search API
+google-auth-httplib2     # Google API 的认证辅助库
+google-auth-oauthlib     # Google API 的 OAuth 库
+requests                 # 同步 HTTP 请求库
+beautifulsoup4           # 用于解析 HTML 内容
+lxml                     # 高性能的 HTML 和 XML 解析器 (供 BeautifulSoup 使用)
+aiohttp                  # 用于异步 HTTP 请求 (在研究模块中使用)
+certifi                  # 提供 SSL 证书
+
+# --- 文档与文件处理 ---
+PyMuPDF           # 用于解析 PDF 文件 (库名为 fitz)
+python-dotenv     # 用于从 .env 文件加载环境变量
+
+# --- 健壮性与异步处理 ---
+tenacity          # 用于实现健壮的 API 调用重试逻辑
+nest-asyncio      # 允许在已有的事件循环中再次运行 asyncio.run()
+
+# --- Google API 依赖 ---
+httplib2          # Google API 客户端库依赖
